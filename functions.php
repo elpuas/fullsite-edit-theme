@@ -47,6 +47,6 @@ add_action( 'wp_enqueue_scripts', 'emptytheme_scripts' );
  * Enqueue WordPress theme styles within Gutenberg.
  */
 function emptytheme_gutenberg_styles() {
-	wp_enqueue_style( 'emptytheme-gutenberg', get_template_directory_uri() . '/build/index.css', array(), false, wp_get_theme()->get( 'Version' ), 'all' );
+	wp_enqueue_style( 'editor-styles', get_template_directory_uri() . '/build/index.css', array(), false, wp_get_theme()->get( 'Version' ), 'all' );
 }
 add_action( 'enqueue_block_editor_assets', 'emptytheme_gutenberg_styles' );

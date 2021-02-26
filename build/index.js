@@ -183,8 +183,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_editor_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_editor_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/style.scss */ "./src/scss/style.scss");
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _js_footer_year_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/footer-year.js */ "./src/js/footer-year.js");
+/* harmony import */ var _js_footer_year_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_footer_year_js__WEBPACK_IMPORTED_MODULE_2__);
 
 
+
+
+/***/ }),
+
+/***/ "./src/js/footer-year.js":
+/*!*******************************!*\
+  !*** ./src/js/footer-year.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var AddYear = function AddYear(container) {
+  var date = new Date();
+  var year = date.getFullYear();
+  container.innerHTML += "<span>".concat(year, "</span>");
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  var footerContainer = document.querySelector('.footer-page');
+  AddYear(footerContainer);
+});
 
 /***/ }),
 
